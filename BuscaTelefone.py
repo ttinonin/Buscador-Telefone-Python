@@ -14,6 +14,6 @@ buscaNumero = re.compile(r'''(
 texto = str(pyperclip.paste())
 
 #escreve os números em um arquivo separado
-with open('Desktop/scripts/lista.txt', 'w') as f:
+with open('DIRETORIO AQUI', 'w') as f:
     for groups in buscaNumero.findall(texto):
         f.write(f"Número encontrado: {groups[0]}\n")
